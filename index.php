@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SISTEM INFORMASI FAMILY LAUNDRY</title>
+<title>SISTEM INFORMASI BERKAH LAUNDRY</title>
 </head>
 <body>
 <h2>Halaman Admin</h2> 
