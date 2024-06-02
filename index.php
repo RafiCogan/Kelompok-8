@@ -1,13 +1,21 @@
-<?php include 'header.php'; ?>
-    <div class="container">
-        <div class="alert alert-info text-center">
-            <h4 style="margin-bottom: 0px"><b>Selamat datang!</b> di sistem informasi family laundry.</h4>
-        </div>
-        <div class="panel">
-            <div class="panel-heading">
-                <h4>Dashboard</h4>
-            </div>
-            <div class="panel-body">Sistem Informasi Family Laundry</div>
-        </div>
-    </div>
-<?php include 'footer.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>SISTEM INFORMASI FAMILY LAUNDRY</title>
+</head>
+<body>
+<h2>Halaman Admin</h2> 
+<br/> 
+<?php
+session_start(); 
+if($_SESSION['status']!="login"){ 
+    header("location:../index.php?pesan=belum_login"); 
+} 
+?> 
+<h4>Selamat datang, <?php echo $_SESSION['username']; ?>! anda telah login.</h4>
+<p>Selamat Datang di Halaman Admin</p> 
+<br/> 
+<br/> 
+<a href="logout.php">LOGOUT</a> 
+</body>
+</html>
